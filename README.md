@@ -23,12 +23,6 @@
 
 ---
 
-### 🌐 **Live Demo Available**
-
-**[netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)**
-
-*Experience the full NetBird SIEM infrastructure in action*
-
 [![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
 
 </div>
