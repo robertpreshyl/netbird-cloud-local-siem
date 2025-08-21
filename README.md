@@ -9,12 +9,24 @@
 [![Security](https://img.shields.io/badge/security-🔒-red.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/security)
 [![NetBird](https://img.shields.io/badge/NetBird-WireGuard-blue.svg)](https://netbird.io)
 [![Security Onion](https://img.shields.io/badge/Security%20Onion-SIEM-orange.svg)](https://securityonion.net)
+[![Website](https://img.shields.io/badge/Website-Live%20Demo-green.svg)](https://netbird.allyshipglobal.com)
 
 ---
 
 ## 🔒 Secure Cloud-Local Log Aggregation with Self-Hosted NetBird
 
 > **A privacy-first solution for aggregating over 2,000,000+ daily logs into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
+
+**Self-hosted NetBird implementation connecting Security Onion SIEM with cloud honeypots. Collects 3M+ logs daily with full data ownership.**
+
+<div align="center">
+
+🌐 **Live Demo**: [netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)  
+🔒 **Zero Trust Networking** | **SIEM** | **Threat Intelligence**
+
+[![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
+
+</div>
 
 <div align="center">
 
@@ -50,6 +62,18 @@
 | Cost (for 50 nodes) | Over $299/month depends on scale | $0 |
 
 ## ✅ Key Advantages of Self-Hosted NetBird in SIEM-Lab
+
+<div align="center">
+
+### 🌐 **Live Demo Available**
+
+**[netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)**
+
+*Experience the full NetBird SIEM infrastructure in action*
+
+[![Visit Demo](https://img.shields.io/badge/🌐%20Visit%20Live%20Demo-Explore%20Now-blue?style=for-the-badge)](https://netbird.allyshipglobal.com)
+
+</div>
 
 ### Operational Benefits
 - **No vendor lock-in**: Full control over the entire infrastructure
@@ -94,7 +118,8 @@ graph TB
 </div>
 
 ### Network Design
-- Self-hosted NetBird management server on AWS VPS Ubuntu 22.04 (cloud VM).
+- **Self-hosted NetBird management server** on AWS VPS Ubuntu 22.04 (cloud VM)
+- **Live Demo Available**: [netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)
 - Secure WireGuard tunnels connecting:
   - Security Onion SIEM (local Oracle Linux 9 deployment) as guestVM
   - Azure Sentinel (cloud-based SIEM for cross-validation)
@@ -254,7 +279,7 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 ---
 
-**Built with ❤️ by [Robert](https://www.linkedin.com/in/precious-robert/)**
+**Built with  by [Robert](https://www.linkedin.com/in/precious-robert/)**
 
 *Empowering security teams with open-source solutions*
 
