@@ -17,9 +17,28 @@
 
 > **A privacy-first solution for aggregating over 2,000,000+ daily logs into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
 
-**Self-hosted NetBird implementation connecting Security Onion SIEM with cloud honeypots. Collects 3M+ logs daily with full data ownership.**
+<div align="center">
+
+*Self-hosted NetBird for enterprise-grade SIEM infrastructure*
+
+---
+
+### 🌐 **Live Demo Available**
+
+**[netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)**
+
+*Experience the full NetBird SIEM infrastructure in action*
+
+[![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
+
+</div>
+
+- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrusion prevention. Commercial solutions cost $15k+/month.
+- **My Solution**: Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
 
 <div align="center">
+
+**Self-hosted NetBird implementation connecting Security Onion SIEM with cloud honeypots. Collects 3M+ logs daily with full data ownership.**
 
 🌐 **Live Demo**: [netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)  
 🔒 **Zero Trust Networking** | **SIEM** | **Threat Intelligence**
@@ -27,15 +46,6 @@
 [![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
 
 </div>
-
-<div align="center">
-
-*Self-hosted NetBird for enterprise-grade SIEM infrastructure*
-
-</div>
-
-- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrusion prevention. Commercial solutions cost $15k+/month.
-- **My Solution**: Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
 
 <div align="center">
 
