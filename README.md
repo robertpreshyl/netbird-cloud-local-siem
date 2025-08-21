@@ -18,7 +18,6 @@
 
 <div align="center">
 
-![NetBird Logo](https://netbird.io/img/logo.svg)
 *Self-hosted NetBird for enterprise-grade SIEM infrastructure*
 
 </div>
@@ -108,11 +107,6 @@ graph TB
 - Zero-trust telemetry flow over NetBird VPN (no public-facing ports), all traffic duly via encripted wireguard tunnel.
 - Complete log visibility across hybrid environments (on-prem + cloud).
 - Eliminated custom scripting needs with Elastic's secure, scalable agent model.
-
-### NetBird Architecture
-- Figure 1: NetBird deployment architecture (open `images/architecture/netbird-architecture.drawio` in [diagrams.net](https://app.diagrams.net/)).
-
----
 
 ## 📊 **Measured Performance Data**
 
@@ -260,7 +254,7 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 ---
 
-**Built with ❤️ by [Precious Robert](https://www.linkedin.com/in/precious-robert/)**
+**Built with ❤️ by [Robert](https://www.linkedin.com/in/precious-robert/)**
 
 *Empowering security teams with open-source solutions*
 
