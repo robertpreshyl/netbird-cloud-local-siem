@@ -41,7 +41,7 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 3, NetBird,  Windows, 2025-04-05 14:40:15, 2025-04-05 14:40:17, 2  
 4, NetBird,  Windows, 2025-04-05 14:41:15, 2025-04-05 14:41:16, 1
 
-- 📄 Full benchmark data: `performance/log-ingestion-benchmarks.csv`
+- 📄 Full benchmark data: `data/sample-data/log-ingestion-benchmarks.csv`
 
 ### System Performance
 - 3.6M+ logs processed in 72 hours (Security Onion + Azure Sentinel).
@@ -63,7 +63,7 @@ My internet-facing honeypots are actively targeted by real attackers — proving
   Figure 2: Real RDP brute-force attempts from global attackers (Kibana visualization).  
   ![Kibana 4625 Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/kibana-discover-4625.png)
 
-- 📥 Download raw attack data (CSV): `evidence/kibana-4625-attacks.csv`
+- 📥 Download raw attack data (CSV): `data/sample-data/kibana-4625-attacks.csv`
 
 ### 💡 Key Insight
 78% of attacks originate from known botnet IP ranges. The secure logging pipeline ensures none go unnoticed.
@@ -96,16 +96,37 @@ Real screenshots from the production SIEM environment:
 "Don't just collect logs — own the pipeline."  
 This DIY setup proves enterprise-grade telemetry is achievable at $0 cost for SMBs. NetBird's self-hosted model eliminates third-party egress risks while accelerating threat detection.
 
+## 📊 Large Dataset Access
+
+For researchers and security professionals who need the complete datasets:
+
+### 🔗 GitHub Releases
+- **Full Kibana 4625 Attack Logs** (140MB+) - Complete RDP brute force dataset
+- **Complete Security Onion Logs** - Full SIEM data for analysis
+- **Network Packet Captures** - PCAP files for deep packet inspection
+
+### 📥 How to Download
+1. Visit [GitHub Releases](https://github.com/robertpreshyl/netbird-cloud-local-siem/releases)
+2. Download the latest release assets
+3. Extract and analyze the data
+
+### 🛠️ For Contributors
+- Use `scripts/manage-large-files.sh` to manage files >100MB
+- Git LFS handles files under 100MB automatically
+- Create GitHub Releases for very large datasets
+
 ## 📁 Repository Structure
 ```
 netbird-cloud-local-siem/
 ├── images/
 │   ├── architecture/           # Network diagrams
 │   └── evidence/               # Screenshots of real data
-├── performance/                # Benchmark data
-│   └── log-ingestion-benchmarks.csv
-├── evidence/                   # Raw attack data
-│   └── kibana-4625-attacks.csv
+├── data/                       # Datasets and evidence files
+│   ├── large-datasets/         # Files >100MB (GitHub Releases)
+│   ├── sample-data/            # Sample files (<100MB)
+│   └── README.md               # Data documentation
+├── scripts/                    # Utility scripts
+│   └── manage-large-files.sh   # Large file management
 ├── config/                     # Configuration examples
 │   ├── netbird-management.json
 │   └── wireguard-config.conf
