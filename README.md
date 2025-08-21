@@ -12,21 +12,36 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 | Log ingestion speed | 12.3 logs/sec | 17.2 logs/sec (+40%) |
 | Data ownership | ❌ Third-party egress | ✅ Full control |
 | AD integration | Limited | ✅ Native support |
-| Cost (for 50 nodes) | $299/month | $0 |
+| Cost (for 50 nodes) | Over $299/month depends on scale | $0 |
+
+## ✅ Key Advantages of Self-Hosted NetBird in SIEM-Lab
+
+### Operational Benefits
+- **No vendor lock-in**: Full control over the entire infrastructure
+- **Predictable costs**: Only pay for cloud hosting (~$15-25/month)
+- **Customizable security policies**(AD): Implement granular access controls
+- **No data egress fees**: All traffic stays within your controlled network
+
+### Security Benefits
+- **Reduced attack surface**: No public-facing management interfaces
+- **Complete audit trail**: Full visibility into all network connections
+- **Integration flexibility**: Easy integration with existing SIEM and monitoring tools
+- **Zero-trust implementation**: Every connection is authenticated and encrypted
 
 ## 🛠️ Architecture Overview
 
 ### Network Design
-- Self-hosted NetBird management server on AWS VPS Ubuntu (cloud VM).
+- Self-hosted NetBird management server on AWS VPS Ubuntu 22.04 (cloud VM).
 - Secure WireGuard tunnels connecting:
-  - Security Onion SIEM (local Oracle Linux 9 deployment)
+  - Security Onion SIEM (local Oracle Linux 9 deployment) as guestVM
   - Azure Sentinel (cloud-based SIEM for cross-validation)
-  - Multiple honeypots (AWS, Azure, Oracle VPS, and RDP servers)
+  - Multiple honeypots (local FLAREVM+REMNux,Metasploitable etc) and Cloud (AWS, Azure, Oracle VPS, and RDP servers)
+  - Deployment of elastic fleet agents from Security Onion to all Local/Cloud endpoints for EDR
 
 ### Log Collection Strategy
 #### ✅ Enterprise-Grade Log Ingestion via Elastic Fleet Agents 
 - Deployed Elastic Agents on 15+ endpoints (local VMs, cloud honeypots, RDPs).
-- Zero-trust telemetry flow over NetBird VPN (no public-facing ports).
+- Zero-trust telemetry flow over NetBird VPN (no public-facing ports), all traffic duly via encripted wireguard tunnel.
 - Complete log visibility across hybrid environments (on-prem + cloud).
 - Eliminated custom scripting needs with Elastic's secure, scalable agent model.
 
@@ -35,29 +50,35 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 
 ## 📊 Measured Performance Data
 
-### Log Ingestion Benchmarks (excerpt)
-1, Tailscale, Windows, 2025-04-05 14:30:15, 2025-04-05 14:30:19, 4  
-2, Tailscale, Windows, 2025-04-05 14:31:15, 2025-04-05 14:31:20, 5  
-3, NetBird,  Windows, 2025-04-05 14:40:15, 2025-04-05 14:40:17, 2  
-4, NetBird,  Windows, 2025-04-05 14:41:15, 2025-04-05 14:41:16, 1
+### System Performance (3-Day Average)
+- **Log Processing Rate**: 3.6M+ logs processed across Security Onion and Azure Sentinel
+- **Network Throughput**: Average 8.2 Mbps sustained over NetBird tunnels
+- **Latency**: Average 45ms between cloud and on-prem endpoints
+- **Uptime**: 99.98% over the 3-day period
+- **Data Freshness**: 95% of logs ingested within 15 seconds of generation
 
-- 📄 Full benchmark data: `data/sample-data/log-ingestion-benchmarks.csv`
+### Resource Utilization
+- **NetBird Server**: 45% CPU, 1.8GB RAM usage (2 vCPU, 2GB RAM instance)
+- **Elastic Agents**: <5% CPU overhead on monitored endpoints
+- **Network Efficiency**: 98% packet delivery rate across hybrid environments
+
 
 ### System Performance
 - 3.6M+ logs processed in 72 hours (Security Onion + Azure Sentinel).
 - 0% data loss during tunnel failover tests.
-- 127 SSH brute-force attempts detected daily from honeypots → ingested in <5 sec.
+- 127/RDPs SSH brute-force attempts detected daily from honeypots → ingested in <10 sec.
 
 ## 🔥 Real-World Attack Data (Production)
 My internet-facing honeypots are actively targeted by real attackers — proving the need for secure, reliable log aggregation.
 
 ### RDP Brute-Force Analysis
-- 54,000+ failed Windows logon attempts (Event ID 4625) in 7 days.
+- 54,000+ Authentication failed Windows logon attempts (Event ID 4625) in 7 days.
 - Top attack sources (GeoIP analysis):
-  - 43.156.12.199 (China) — 1,200+ attempts
-  - 103.78.242.110 (Vietnam) — 980+ attempts
-  - 192.185.218.167 (USA) — 750+ attempts
-  - 185.130.105.23 (Russia) — 620+ attempts
+  - 102.88.137.82 (Nigeria) — 12,700+ attempts
+  - 80.94.95.54 (Vietnam) — 12,600+ attempts
+  - 200.41.47.211 (Argentina) — 6200+ attempts
+  - 152.53.135.48 (Germany) — 5,777+ attempts
+  - 188.67.106.14 (Chile) — 5,510+ attempts
 
 - Kibana - Failed RDP Attempts  
   Figure 2: Real RDP brute-force attempts from global attackers (Kibana visualization).  
@@ -66,7 +87,14 @@ My internet-facing honeypots are actively targeted by real attackers — proving
 - 📥 Download raw attack data (CSV): `data/sample-data/kibana-4625-attacks.csv`
 
 ### 💡 Key Insight
-78% of attacks originate from known botnet IP ranges. The secure logging pipeline ensures none go unnoticed.
+Open ssh/RDP ports are magnets for automated attacks. Within hours of exposing the services, thousands of brute-force attempts from diverse global sources were detected, highlighting the constant scanning activity on the internet.
+
+95% of attacks are automated scanning bots. Our honeypot recorded over 12,000 brute-force attempts in 7 days, with three IPs accounting for 25% of all attacks:
+- `102.88.137.82` (Nigeria) - 12,000+ attempts (reported 98 times globally)
+- `80.94.95.54` (Romania) - 12,600+ attempts (reported 515 times globally)
+- `200.41.47.211` (Argentina) - 8,200+ attempts (reported 25 times globally)
+
+This demonstrates why services like RDP should never be exposed directly to the internet. Solutions like NetBird provide secure access without exposing attack surfaces.
 
 ### 📸 Evidence Gallery
 Real screenshots from the production SIEM environment:
@@ -94,26 +122,7 @@ Real screenshots from the production SIEM environment:
 
 ## 💡 Key Takeaway for Security Teams
 "Don't just collect logs — own the pipeline."  
-This DIY setup proves enterprise-grade telemetry is achievable at $0 cost for SMBs. NetBird's self-hosted model eliminates third-party egress risks while accelerating threat detection.
-
-## 📊 Large Dataset Access
-
-For researchers and security professionals who need the complete datasets:
-
-### 🔗 GitHub Releases
-- **Full Kibana 4625 Attack Logs** (140MB+) - Complete RDP brute force dataset
-- **Complete Security Onion Logs** - Full SIEM data for analysis
-- **Network Packet Captures** - PCAP files for deep packet inspection
-
-### 📥 How to Download
-1. Visit [GitHub Releases](https://github.com/robertpreshyl/netbird-cloud-local-siem/releases)
-2. Download the latest release assets
-3. Extract and analyze the data
-
-### 🛠️ For Contributors
-- Use `scripts/manage-large-files.sh` to manage files >100MB
-- Git LFS handles files under 100MB automatically
-- Create GitHub Releases for very large datasets
+This DIY setup proves enterprise-grade telemetry is achievable at minimal cost for SMBs. While the software components are open source, you'll only pay for your cloud hosting (approximately $15-25/month for the recommended instance size).
 
 ## 📁 Repository Structure
 ```
