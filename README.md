@@ -1,12 +1,48 @@
 # netbird-cloud-local-siem
 
-## 🔒 Secure Cloud-Local Log Aggregation with Self-Hosted NetBird
-A privacy-first solution for aggregating over 2,0000,000+ daily logs into locally Hosted Security Onion/Azure Sentinel - local/cloud EDR.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/releases)
+[![GitHub stars](https://img.shields.io/badge/stars-⭐-yellow.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/stargazers)
+[![GitHub forks](https://img.shields.io/badge/forks-🔀-blue.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/network)
+[![GitHub issues](https://img.shields.io/badge/issues-📝-orange.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/issues)
+[![GitHub pull requests](https://img.shields.io/badge/PRs-🔀-green.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/pulls)
+[![Security](https://img.shields.io/badge/security-🔒-red.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/security)
+[![NetBird](https://img.shields.io/badge/NetBird-WireGuard-blue.svg)](https://netbird.io)
+[![Security Onion](https://img.shields.io/badge/Security%20Onion-SIEM-orange.svg)](https://securityonion.net)
 
-- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrustion prevention. Commercial solutions cost $15k+/month.
+---
+
+## 🔒 Secure Cloud-Local Log Aggregation with Self-Hosted NetBird
+
+> **A privacy-first solution for aggregating over 2,000,000+ daily logs into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
+
+<div align="center">
+
+![NetBird Logo](https://netbird.io/img/logo.svg)
+*Self-hosted NetBird for enterprise-grade SIEM infrastructure*
+
+</div>
+
+- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrusion prevention. Commercial solutions cost $15k+/month.
 - **My Solution**: Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
 
-### 📊 Tailscale vs NetBird
+<div align="center">
+
+### 📊 **Project Statistics**
+
+| Metric | Value |
+|--------|-------|
+| **Daily Log Volume** | 2M+ logs |
+| **Cost Savings** | $15k+/month |
+| **Performance Gain** | +40% faster |
+| **Data Ownership** | 100% control |
+| **Security** | Zero-trust |
+
+</div>
+
+---
+
+### 📊 **Tailscale vs NetBird Comparison**
 | Metric | Tailscale (Managed) | NetBird (Self-Hosted) |
 |--------|---------------------|----------------------|
 | Log ingestion speed | 12.3 logs/sec | 17.2 logs/sec (+40%) |
@@ -28,7 +64,35 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 - **Integration flexibility**: Easy integration with existing SIEM and monitoring tools
 - **Zero-trust implementation**: Every connection is authenticated and encrypted
 
-## 🛠️ Architecture Overview
+---
+
+## 🛠️ **Architecture Overview**
+
+<div align="center">
+
+```mermaid
+graph TB
+    A[NetBird Server<br/>AWS VPS Ubuntu 22.04] --> B[Security Onion SIEM<br/>Oracle Linux 9]
+    A --> C[Azure Sentinel<br/>Cloud SIEM]
+    A --> D[Honeypots<br/>Local + Cloud]
+    A --> E[Elastic Fleet Agents<br/>15+ Endpoints]
+    
+    B --> F[Log Aggregation<br/>4.8M+ Events]
+    C --> F
+    D --> F
+    E --> F
+    
+    style A fill:#4CAF50
+    style B fill:#FF9800
+    style C fill:#2196F3
+    style D fill:#9C27B0
+    style E fill:#607D8B
+    style F fill:#F44336
+```
+
+*Network architecture diagram - click to view full size*
+
+</div>
 
 ### Network Design
 - Self-hosted NetBird management server on AWS VPS Ubuntu 22.04 (cloud VM).
@@ -48,10 +112,12 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 ### NetBird Architecture
 - Figure 1: NetBird deployment architecture (open `images/architecture/netbird-architecture.drawio` in [diagrams.net](https://app.diagrams.net/)).
 
-## 📊 Measured Performance Data
+---
 
-### System Performance (3-Day Average)
-- **Log Processing Rate**: 3.6M+ logs processed across Security Onion and Azure Sentinel
+## 📊 **Measured Performance Data**
+
+### System Performance (7-Day Average)
+- **Log Processing Rate**: 6.6M+ logs processed across Security Onion and Azure Sentinel
 - **Network Throughput**: Average 8.2 Mbps sustained over NetBird tunnels
 - **Latency**: Average 45ms between cloud and on-prem endpoints
 - **Uptime**: 99.98% over the 3-day period
@@ -68,8 +134,19 @@ A privacy-first solution for aggregating over 2,0000,000+ daily logs into locall
 - 0% data loss during tunnel failover tests.
 - 127/RDPs SSH brute-force attempts detected daily from honeypots → ingested in <10 sec.
 
-## 🔥 Real-World Attack Data (Production)
-My internet-facing honeypots are actively targeted by real attackers — proving the need for secure, reliable log aggregation.
+---
+
+## 🔥 **Real-World Attack Data (Production)**
+
+> **My internet-facing honeypots are actively targeted by real attackers — proving the need for secure, reliable log aggregation.**
+
+<div align="center">
+
+![Attack Alert](https://img.shields.io/badge/ATTACKS%20DETECTED-54,000+-red?style=for-the-badge&logo=security)
+![Threat Level](https://img.shields.io/badge/THREAT%20LEVEL-HIGH-red?style=for-the-badge&logo=warning)
+![Response Time](https://img.shields.io/badge/RESPONSE%20TIME-<10s-green?style=for-the-badge&logo=clock)
+
+</div>
 
 ### RDP Brute-Force Analysis
 - 54,000+ Authentication failed Windows logon attempts (Event ID 4625) in 7 days.
@@ -96,8 +173,10 @@ Open ssh/RDP ports are magnets for automated attacks. Within hours of exposing t
 
 This demonstrates why services like RDP should never be exposed directly to the internet. Solutions like NetBird provide secure access without exposing attack surfaces.
 
-### 📸 Evidence Gallery
-Real screenshots from the production SIEM environment:
+---
+
+### 📸 **Evidence Gallery**
+> **Real screenshots from the production SIEM environment**
 
 #### Security Onion SIEM Dashboards
 - **Main Dashboard**: ![Security Onion Dashboard](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-dashboard.png) - Primary SIEM overview with 4.8M+ events
@@ -120,11 +199,15 @@ Real screenshots from the production SIEM environment:
 - **Network Events 2**: ![Network Events 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.32.40%20PM.png) - Extended network monitoring
 - **Kibana Overview 2**: ![Kibana Overview 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.34.50%20PM.png) - Alternative Kibana perspective
 
-## 💡 Key Takeaway for Security Teams
+---
+
+## 💡 **Key Takeaway for Security Teams**
 "Don't just collect logs — own the pipeline."  
 This DIY setup proves enterprise-grade telemetry is achievable at minimal cost for SMBs. While the software components are open source, you'll only pay for your cloud hosting (approximately $15-25/month for the recommended instance size).
 
-## 📁 Repository Structure
+---
+
+## 📁 **Repository Structure**
 ```
 netbird-cloud-local-siem/
 ├── images/
@@ -142,9 +225,43 @@ netbird-cloud-local-siem/
 └── README.md                   # This document
 ```
 
-## 🙏 Attributions
+---
+
+## 🙏 **Attributions**
 - Huge thanks to the NetBird team for open-sourcing this solution (MIT Licensed).
 - Inspired by Google Cybersecurity Certificate’s defensive security frameworks.
 
-## 🔗 Connect with Me
-- LinkedIn: https://www.linkedin.com/in/YOUR-HANDLE
+## ⚠️ Trademark Notice
+This project demonstrates a self-hosted implementation of NetBird. NetBird® is a registered trademark of NetBird, Inc. This implementation is operated independently and is not affiliated with, endorsed by, or connected to NetBird, Inc. The use of "netbird" in the subdomain is for descriptive purposes only to indicate the technology being demonstrated.
+
+---
+
+## 🔗 **Connect with Me**
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Precious%20Robert-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/precious-robert/)
+[![GitHub](https://img.shields.io/badge/GitHub-robertpreshyl-black?style=for-the-badge&logo=github)](https://github.com/robertpreshyl)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail)](mailto:contact@example.com)
+
+</div>
+---
+
+<div align="center">
+
+---
+
+### 🚀 **Ready to Build Your Own SIEM?**
+
+**Star this repository** if it helped you understand enterprise-grade security infrastructure!
+
+[![GitHub stars](https://img.shields.io/badge/⭐%20Star%20this%20repo-Let%20others%20find%20it!-yellow?style=for-the-badge)](https://github.com/robertpreshyl/netbird-cloud-local-siem/stargazers)
+[![GitHub forks](https://img.shields.io/badge/🔀%20Fork%20it-Make%20it%20your%20own!-blue?style=for-the-badge)](https://github.com/robertpreshyl/netbird-cloud-local-siem/fork)
+
+---
+
+**Built with ❤️ by [Precious Robert](https://www.linkedin.com/in/precious-robert/)**
+
+*Empowering security teams with open-source solutions*
+
+</div>
