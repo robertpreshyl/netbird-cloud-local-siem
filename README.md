@@ -1,19 +1,18 @@
 # netbird-cloud-local-siem
 
 ## 🔒 Secure Cloud-Local Log Aggregation with Self-Hosted NetBird
-A privacy-first solution for aggregating 500k+ daily logs into Security Onion/Azure Sentinel.
+A privacy-first solution for aggregating over 2,0000,000+ daily logs into locally Hosted Security Onion/Azure Sentinel - local/cloud EDR.
 
-- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection. Commercial solutions cost $15k+/month.
+- **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrustion prevention. Commercial solutions cost $15k+/month.
 - **My Solution**: Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
 
-### 📊 Tailscale vs NetBird (CSV)
-```csv
-Metric,Tailscale (Managed),NetBird (Self-Hosted)
-Log ingestion speed,12.3 logs/sec,17.2 logs/sec (+40%)
-Data ownership,❌ Third-party egress,✅ Full control
-AD integration,Limited,✅ Native support
-Cost (for 50 nodes),$299/month,$0
-```
+### 📊 Tailscale vs NetBird
+| Metric | Tailscale (Managed) | NetBird (Self-Hosted) |
+|--------|---------------------|----------------------|
+| Log ingestion speed | 12.3 logs/sec | 17.2 logs/sec (+40%) |
+| Data ownership | ❌ Third-party egress | ✅ Full control |
+| AD integration | Limited | ✅ Native support |
+| Cost (for 50 nodes) | $299/month | $0 |
 
 ## 🛠️ Architecture Overview
 
@@ -25,7 +24,7 @@ Cost (for 50 nodes),$299/month,$0
   - Multiple honeypots (AWS, Azure, Oracle VPS, and RDP servers)
 
 ### Log Collection Strategy
-#### ✅ Enterprise-Grade Log Ingestion via Elastic Fleet
+#### ✅ Enterprise-Grade Log Ingestion via Elastic Fleet Agents 
 - Deployed Elastic Agents on 15+ endpoints (local VMs, cloud honeypots, RDPs).
 - Zero-trust telemetry flow over NetBird VPN (no public-facing ports).
 - Complete log visibility across hybrid environments (on-prem + cloud).
