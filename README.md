@@ -71,14 +71,26 @@ My internet-facing honeypots are actively targeted by real attackers — proving
 ### 📸 Evidence Gallery
 Real screenshots from the production SIEM environment:
 
-- **Security Onion Dashboard**: `images/evidence/security-onion-dashboard.png` - Main SIEM overview with 4.8M+ events
+#### Security Onion SIEM Dashboards
+- **Main Dashboard**: `images/evidence/security-onion-dashboard.png` - Primary SIEM overview with 4.8M+ events
 - **Authentication Events**: `images/evidence/security-onion-authentication.png` - Real-time authentication monitoring
 - **Event Analysis**: `images/evidence/security-onion-events-table.png` - Detailed event investigation interface
 - **Threat Hunting**: `images/evidence/security-onion-hunt.png` - Advanced threat hunting capabilities
-- **Kibana 4625 Events**: `images/evidence/kibana-discover-4625.png` - Windows failed logon analysis
+- **VMware Deployment**: `images/evidence/security-onion-vmware.png` - Security Onion VM setup
+
+#### Kibana Elastic Stack
+- **Windows 4625 Events**: `images/evidence/kibana-discover-4625.png` - Failed Windows logon analysis
 - **Network Logon Events**: `images/evidence/kibana-discover-network.png` - Network authentication monitoring
 - **Kibana Overview**: `images/evidence/kibana-discover-overview.png` - Elastic stack dashboard
-- **VMware Deployment**: `images/evidence/security-onion-vmware.png` - Security Onion VM setup
+
+#### Additional Evidence Screenshots
+- **Dashboard View 2**: `images/evidence/Screenshot 2025-08-21 at 4.50.45 PM.png` - Alternative dashboard perspective
+- **Hunt Interface 2**: `images/evidence/Screenshot 2025-08-21 at 4.51.17 PM.png` - Additional threat hunting view
+- **Authentication 2**: `images/evidence/Screenshot 2025-08-21 at 5.04.39 PM.png` - Extended authentication monitoring
+- **Events Table 2**: `images/evidence/Screenshot 2025-08-21 at 5.04.50 PM.png` - Alternative events view
+- **Kibana 4625 2**: `images/evidence/Screenshot 2025-08-21 at 5.05.20 PM.png` - Additional failed logon analysis
+- **Network Events 2**: `images/evidence/Screenshot 2025-08-21 at 5.32.40 PM.png` - Extended network monitoring
+- **Kibana Overview 2**: `images/evidence/Screenshot 2025-08-21 at 5.34.50 PM.png` - Alternative Kibana perspective
 
 ## 💡 Key Takeaway for Security Teams
 "Don't just collect logs — own the pipeline."  
