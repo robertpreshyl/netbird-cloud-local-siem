@@ -67,18 +67,6 @@
 
 ## ✅ Key Advantages of Self-Hosted NetBird in SIEM-Lab
 
-<div align="center">
-
-### 🌐 **Live Demo Available**
-
-**[netbird.allyshipglobal.com](https://netbird.allyshipglobal.com)**
-
-*Experience the full NetBird SIEM infrastructure in action*
-
-[![Visit Demo](https://img.shields.io/badge/🌐%20Visit%20Live%20Demo-Explore%20Now-blue?style=for-the-badge)](https://netbird.allyshipglobal.com)
-
-</div>
-
 ### Operational Benefits
 - **No vendor lock-in**: Full control over the entire infrastructure
 - **Predictable costs**: Only pay for cloud hosting (~$15-25/month)
@@ -283,7 +271,7 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 ---
 
-**Built with  by [Robert](https://www.linkedin.com/in/precious-robert/)**
+**Built with Push.In.ProD by [Robert](https://www.linkedin.com/in/precious-robert/)**
 
 *Empowering security teams with open-source solutions*
 
