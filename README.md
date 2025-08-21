@@ -1,0 +1,1 @@
+# netbird-cloud-local-siem
