@@ -84,13 +84,13 @@ Real screenshots from the production SIEM environment:
 - **Kibana Overview**: ![Kibana Overview](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/kibana-discover-overview.png) - Elastic stack dashboard
 
 #### Additional Evidence Screenshots
-- **Dashboard View 2**: ![Dashboard View 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%204.50.45%20PM.png) - Alternative dashboard perspective
-- **Hunt Interface 2**: ![Hunt Interface 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%204.51.17%20PM.png) - Additional threat hunting view
-- **Authentication 2**: ![Authentication 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%205.04.39%20PM.png) - Extended authentication monitoring
-- **Events Table 2**: ![Events Table 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%205.04.50%20PM.png) - Alternative events view
-- **Kibana 4625 2**: ![Kibana 4625 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%205.05.20%20PM.png) - Additional failed logon analysis
-- **Network Events 2**: ![Network Events 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%205.32.40%20PM.png) - Extended network monitoring
-- **Kibana Overview 2**: ![Kibana Overview 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Screenshot%202025-08-21%20at%205.34.50%20PM.png) - Alternative Kibana perspective
+- **Dashboard View 2**: ![Dashboard View 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-4.50.45%20PM.png) - Alternative dashboard perspective
+- **Hunt Interface 2**: ![Hunt Interface 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-4.51.17%20PM.png) - Additional threat hunting view
+- **Authentication 2**: ![Authentication 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-5.04.39%20PM.png) - Extended authentication monitoring
+- **Events Table 2**: ![Events Table 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-5.04.50%20PM.png) - Alternative events view
+- **Kibana 4625 2**: ![Kibana 4625 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-5.05.20%20PM.png) - Additional failed logon analysis
+- **Network Events 2**: ![Network Events 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-5.32.40%20PM.png) - Extended network monitoring
+- **Kibana Overview 2**: ![Kibana Overview 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/screenshot-5.34.50%20PM.png) - Alternative Kibana perspective
 
 ## 💡 Key Takeaway for Security Teams
 "Don't just collect logs — own the pipeline."  
