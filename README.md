@@ -61,12 +61,24 @@ My internet-facing honeypots are actively targeted by real attackers — proving
 
 - Kibana - Failed RDP Attempts  
   Figure 2: Real RDP brute-force attempts from global attackers (Kibana visualization).  
-  Image: `images/evidence/kibana-4625.png`
+  Image: `images/evidence/kibana-discover-4625.png`
 
 - 📥 Download raw attack data (CSV): `evidence/kibana-4625-attacks.csv`
 
 ### 💡 Key Insight
 78% of attacks originate from known botnet IP ranges. The secure logging pipeline ensures none go unnoticed.
+
+### 📸 Evidence Gallery
+Real screenshots from the production SIEM environment:
+
+- **Security Onion Dashboard**: `images/evidence/security-onion-dashboard.png` - Main SIEM overview with 4.8M+ events
+- **Authentication Events**: `images/evidence/security-onion-authentication.png` - Real-time authentication monitoring
+- **Event Analysis**: `images/evidence/security-onion-events-table.png` - Detailed event investigation interface
+- **Threat Hunting**: `images/evidence/security-onion-hunt.png` - Advanced threat hunting capabilities
+- **Kibana 4625 Events**: `images/evidence/kibana-discover-4625.png` - Windows failed logon analysis
+- **Network Logon Events**: `images/evidence/kibana-discover-network.png` - Network authentication monitoring
+- **Kibana Overview**: `images/evidence/kibana-discover-overview.png` - Elastic stack dashboard
+- **VMware Deployment**: `images/evidence/security-onion-vmware.png` - Security Onion VM setup
 
 ## 💡 Key Takeaway for Security Teams
 "Don't just collect logs — own the pipeline."  
