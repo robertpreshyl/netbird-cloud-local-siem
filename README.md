@@ -234,22 +234,11 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 ---
 
-## 🔗 **Connect with Me**
+## 🚀 **Get Involved & Connect**
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Precious%20Robert-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/precious-robert/)
-[![GitHub](https://img.shields.io/badge/GitHub-robertpreshyl-black?style=for-the-badge&logo=github)](https://github.com/robertpreshyl)
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail)](mailto:contact@example.com)
-
-</div>
----
-
-<div align="center">
-
----
-
-### 🚀 **Ready to Build Your Own SIEM?**
+### **Support This Project**
 
 **Star this repository** if it helped you understand enterprise-grade security infrastructure!
 
@@ -258,7 +247,15 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 ---
 
-**Built with Push.In.ProD by [Robert](https://www.linkedin.com/in/precious-robert/)**
+### **Connect with Me**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Precious%20Robert-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/precious-robert/)
+[![GitHub](https://img.shields.io/badge/GitHub-robertpreshyl-black?style=for-the-badge&logo=github)](https://github.com/robertpreshyl)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Explore%20Now-green?style=for-the-badge)](https://netbird.allyshipglobal.com)
+
+---
+
+**Built with ❤️ by [Precious Robert](https://www.linkedin.com/in/precious-robert/)**
 
 *Empowering security teams with open-source solutions*
 
