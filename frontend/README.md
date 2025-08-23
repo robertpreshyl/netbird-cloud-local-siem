@@ -1,20 +1,30 @@
-# NetBird Lab Frontend Website
+# ASL VPN - Allyship Security Lab Frontend Website
 
-A modern, responsive single-page website showcasing a self-hosted NetBird instance for cybersecurity lab operations.
+A modern, responsive single-page website showcasing ASL VPN (Allyship Security Lab VPN) - a self-hosted NetBird instance for cybersecurity lab operations and global security community building.
+
+## 🏢 About Allyship Security Lab
+
+**Allyship Security Lab** is building a global team of security-minded professionals and security-focused enthusiasts focused on practical applications and testing around the globe. We are a home for blue/red teamers with a strong foothold on building bonds and ties, creating strong global allies with like minds, and fostering strong bonds across the cybersecurity community.
+
+### Our Mission
+- **Global Security Community**: Building strong alliances across borders
+- **Practical Applications**: Real-world security testing and research
+- **Blue/Red Team Collaboration**: Fostering both defensive and offensive security skills
+- **Knowledge Sharing**: Creating strong bonds through shared learning
 
 ## 🚀 Quick Start
 
 1. **Open the website**: Simply open `index.html` in any modern web browser
 2. **Local development**: Use a local server for best experience (e.g., `python -m http.server 8000`)
-3. **Deploy**: Upload all files to your web server at `netbird.allyshipglobal.com`
+3. **Deploy**: Upload all files to your web server at `allyshipglobal.com`
 
 ## 📁 File Structure
 
 ```
 frontend/
-├── index.html          # Main HTML file (20KB)
-├── styles.css          # Complete CSS with themes (12.6KB)
-├── script.js           # JavaScript functionality (13.6KB)
+├── index.html          # Main HTML file (26KB)
+├── styles.css          # Complete CSS with themes (20KB)
+├── script.js           # JavaScript functionality (26KB)
 ├── context.md          # Development requirements
 ├── README.md           # This file
 └── assets/
@@ -83,17 +93,26 @@ The website includes console-based analytics tracking that can be easily extende
 - Matomo
 - Custom analytics solutions
 
+## 🌐 Domain Strategy
+
+Our scalable domain architecture allows for future growth:
+- **Main Site**: allyshipglobal.com (this frontend)
+- **Lab Platform**: lab.allyshipglobal.com
+- **ASL VPN**: netbird.allyshipglobal.com
+- **VPN Services**: vpn.allyshipglobal.com
+- **Community Platform**: community.allyshipglobal.com
+
 ## 🎯 Next Steps
 
 1. **Test locally** - Open `index.html` in your browser
 2. **Customize content** - Update GitHub links and metrics
 3. **Deploy** - Upload to your web server
-4. **Configure** - Set up your NetBird dashboard at `/ui`
+4. **Configure** - Set up your NetBird dashboard at netbird.allyshipglobal.com/ui
 
 ## 📞 Support
 
-This frontend is designed to showcase your cybersecurity expertise while providing easy access to your NetBird dashboard. All files are self-contained and ready for production use.
+This frontend is designed to showcase Allyship Security Lab's cybersecurity expertise while providing easy access to our ASL VPN infrastructure. All files are self-contained and ready for production use.
 
 ---
 
-**Note**: This is a personal cybersecurity lab implementation. Not affiliated with NetBird.io.
+**Note**: This is an Allyship Security Lab cybersecurity lab implementation. Not affiliated with NetBird.io.
