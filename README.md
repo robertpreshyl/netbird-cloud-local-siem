@@ -15,7 +15,7 @@
 
 ## 🔒 Secure Cloud-Local Log Aggregation with Self-Hosted NetBird
 
-> **A privacy-first solution for aggregating over 2,000,000+ daily logs into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
+> **A privacy-first solution for aggregating over 14,000,000+/Week logs into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
 
 <div align="center">
 
@@ -28,7 +28,7 @@
 </div>
 
 - **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrusion prevention. Commercial solutions cost $15k+/month.
-- **My Solution**: Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
+- **My Solution**: Deployment of Self-hosted NetBird (WireGuard-based) — $0 cost, full data ownership, 40% faster log ingestion.
 
 ### 📊 **Project Statistics**
 
@@ -45,12 +45,16 @@
 ---
 
 ### 📊 **Tailscale vs NetBird Comparison**
-| Metric | Tailscale (Managed) | NetBird (Self-Hosted) |
-|--------|---------------------|----------------------|
-| Log ingestion speed | 12.3 logs/sec | 17.2 logs/sec (+40%) |
-| Data ownership | ❌ Third-party egress | ✅ Full control |
-| AD integration | Limited | ✅ Native support |
-| Cost (for 50 nodes) | Over $299/month depends on scale | $0 |
+| Feature | Tailscale (Paid) | Self-Hosted NetBird |
+|---------|------------------|-------------------|
+| **Data Ownership** | ❌ Traffic routed through third-party | ✅ Full control - All traffic stays within your infrastructure |
+| **Management** | ✅ Polished UI | ✅ Modern UI with self-hosted control |
+| **AD/LDAP Integration** | ✅ Available in paid tiers | ✅ Native support in self-hosted version |
+| **Cost Structure** | 💰 $7/user/month | 💰 $0 - Only infrastructure costs you already have |
+| **Traffic Flow** | 🌐 Traffic typically routed through relays | 🌐 Direct peer-to-peer - No third-party egress |
+| **Customization** | ⚙️ Limited customization | ⚙️ Full customization - Modify to meet specific security requirements |
+| **Compliance** | 📦 Depends on provider | 📦 Your compliance - Control your audit trail |
+| **Log Ingestion Speed** | 📊 12.3 logs/sec | 📊 17.2 logs/sec (+40%) |
 
 ## ✅ Key Advantages of Self-Hosted NetBird in SIEM-Lab
 
