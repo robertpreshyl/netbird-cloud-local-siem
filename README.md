@@ -26,9 +26,9 @@
 
 **Security Onion Dashboard Overview (1 min)**
 
-https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Security%20Onion%20Dashboard%20Overview.mp4
+[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Security%20Onion%20Dashboard%20Overview.mp4)
 
-*Security Onion dashboard in action - Click to play*
+*Click the button above to watch the Security Onion dashboard in action*
 
 </div>
 
