@@ -20,15 +20,9 @@
 
 ---
 
-## 🎥 **Quick Overview Video**
-
 <div align="center">
 
-**Security Onion Dashboard Overview (1 min)**
-
 [![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://www.youtube.com/watch?v=6jGp3aVFP4w)
-
-*Click the button above to watch the Security Onion dashboard in action*
 
 </div>
 
@@ -81,10 +75,11 @@ graph TB
 
 - **Self-hosted NetBird management server** on AWS VPS Ubuntu 22.04
 - **Secure WireGuard tunnels** connecting:
-  - Security Onion SIEM (local Oracle Linux 9 deployment)
+  - Security Onion SIEM (local Oracle Linux 9 deployment) as Guest on a local Host machine
   - Azure Sentinel (cloud-based SIEM for cross-validation)
   - Multiple honeypots (local + cloud-based)
   - Elastic Fleet Agents on 15+ endpoints for EDR
+  - NetBird Bringing all the networks subnets together (each endpoints Ping-able with proper Access Control)
 
 ### 📊 **Log Collection Strategy**
 
