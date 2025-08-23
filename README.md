@@ -33,9 +33,12 @@
 
 **Security Onion Dashboard Overview (1 min)**
 
-[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Security%20Onion%20Dashboard%20Overview.mp4)
+<video width="100%" controls>
+  <source src="images/evidence/Security Onion Dashboard Overview.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-*Click to watch the Security Onion dashboard in action*
+*Security Onion dashboard in action*
 
 </div>
 
