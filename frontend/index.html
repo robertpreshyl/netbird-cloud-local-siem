@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Cloud-Local Network Integration | NetBird Self-Hosted Instance</title>
+    <meta name="description" content="Privacy-first networking for cybersecurity lab environment. Self-hosted NetBird instance with Security Onion SIEM integration.">
+    <meta name="keywords" content="NetBird, cybersecurity, SIEM, Security Onion, zero-trust, VPN, networking">
+    <meta name="author" content="Allyship Global Ltd">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://netbird.allyshipglobal.com/">
+    <meta property="og:title" content="Secure Cloud-Local Network Integration">
+    <meta property="og:description" content="Privacy-first networking for cybersecurity lab environment">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://netbird.allyshipglobal.com/">
+    <meta property="twitter:title" content="Secure Cloud-Local Network Integration">
+    <meta property="twitter:description" content="Privacy-first networking for cybersecurity lab environment">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">🔒</div>
+                <span class="brand-text">NetBird Lab</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#technical" class="nav-link">Architecture</a>
+                <a href="#validation" class="nav-link">Performance</a>
+                <a href="#cta" class="nav-link">Access</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Self-Hosted Implementation</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Secure Cloud-Local</span>
+                    <span class="title-line highlight">Network Integration</span>
+                </h1>
+                <p class="hero-subtitle">Privacy-first networking for my cybersecurity lab environment</p>
+                <p class="hero-description">
+                    This self-hosted NetBird instance enables zero-trust networking across hybrid cloud and on-premises infrastructure. 
+                    Seamlessly connecting Security Onion SIEM with enterprise endpoints for comprehensive threat detection and log aggregation. 
+                    Built with privacy and security as core principles, demonstrating enterprise-grade cybersecurity at scale.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://netbird.allyshipglobal.com/ui/login/loginname" class="btn btn-primary">
+                        <span class="btn-icon">🚀</span>
+                        Access Dashboard
+                    </a>
+                    <a href="https://netbird.allyshipglobal.com/ui/login/userselection" class="btn btn-secondary">
+                        <span class="btn-icon">👤</span>
+                        Register Account
+                    </a>
+                    <a href="https://github.com/allyshipgloballtd/netbird-cloud-local-siem" class="btn btn-outline" target="_blank" rel="noopener">
+                        <span class="btn-icon">📚</span>
+                        View Implementation
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="network-diagram">
+                    <div class="diagram-header">
+                        <h3>Network Architecture Overview</h3>
+                        <p>Real-time connectivity across hybrid environments</p>
+                    </div>
+                    <svg viewBox="0 0 500 400" class="diagram-svg">
+                        <!-- Cloud Environment -->
+                        <g class="cloud-node">
+                            <rect x="50" y="50" width="120" height="80" rx="12" fill="var(--accent-color)" opacity="0.15" stroke="var(--accent-color)" stroke-width="2"/>
+                            <text x="110" y="75" text-anchor="middle" class="node-text">AWS Cloud</text>
+                            <text x="110" y="95" text-anchor="middle" class="node-subtext">NetBird Server</text>
+                            <text x="110" y="110" text-anchor="middle" class="node-subtext">Signal + TURN</text>
+                        </g>
+                        
+                        <!-- NetBird Hub -->
+                        <g class="netbird-hub">
+                            <circle cx="250" cy="200" r="40" fill="var(--primary-color)" opacity="0.2" stroke="var(--accent-secondary)" stroke-width="3"/>
+                            <text x="250" y="200" text-anchor="middle" class="hub-text">NetBird</text>
+                            <text x="250" y="215" text-anchor="middle" class="hub-subtext">Control Plane</text>
+                        </g>
+                        
+                        <!-- On-Premises Network -->
+                        <g class="onprem-node">
+                            <rect x="350" y="50" width="120" height="80" rx="12" fill="var(--accent-secondary)" opacity="0.15" stroke="var(--accent-secondary)" stroke-width="2"/>
+                            <text x="410" y="75" text-anchor="middle" class="node-text">On-Premises</text>
+                            <text x="410" y="95" text-anchor="middle" class="node-subtext">Security Onion</text>
+                            <text x="410" y="110" text-anchor="middle" class="node-subtext">SIEM + AD</text>
+                        </g>
+                        
+                        <!-- Endpoints -->
+                        <g class="endpoints">
+                            <circle cx="100" cy="300" r="25" fill="var(--surface)" opacity="0.8" stroke="var(--accent-color)" stroke-width="2"/>
+                            <text x="100" y="305" text-anchor="middle" class="endpoint-text">Endpoints</text>
+                            <text x="100" y="320" text-anchor="middle" class="endpoint-subtext">15+ Devices</text>
+                        </g>
+                        
+                        <!-- Connections with data flow -->
+                        <path d="M 170 90 Q 200 140 210 160" stroke="var(--accent-color)" stroke-width="3" fill="none" opacity="0.8"/>
+                        <path d="M 350 90 Q 320 140 290 160" stroke="var(--accent-secondary)" stroke-width="3" fill="none" opacity="0.8"/>
+                        <path d="M 100 275 Q 150 200 210 160" stroke="var(--accent-color)" stroke-width="3" fill="none" opacity="0.8"/>
+                        
+                        <!-- Data flow indicators -->
+                        <circle cx="190" cy="125" r="4" fill="var(--accent-color)" class="pulse"/>
+                        <circle cx="310" cy="125" r="4" fill="var(--accent-secondary)" class="pulse"/>
+                        <circle cx="155" cy="237" r="4" fill="var(--accent-color)" class="pulse"/>
+                        
+                        <!-- Connection labels -->
+                        <text x="190" y="140" class="connection-label">Secure Tunnel</text>
+                        <text x="310" y="140" class="connection-label">SIEM Integration</text>
+                        <text x="155" y="252" class="connection-label">Zero-Trust</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Implementation Features</h2>
+                <p class="section-subtitle">Enterprise-grade cybersecurity infrastructure built for scale</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Zero-Trust Architecture</h3>
+                    <p>Complete zero-trust networking with Security Onion SIEM integration, ensuring every connection is verified and monitored for comprehensive threat detection.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Security</span>
+                        <span class="tag">SIEM</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Secure Log Aggregation</h3>
+                    <p>Seamless log collection from distributed endpoints to centralized SIEM, maintaining data integrity and confidentiality across hybrid infrastructure.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Logging</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>AD Integration</h3>
+                    <p>Active Directory integration provides centralized identity management and policy enforcement across all network participants and security tools.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Identity</span>
+                        <span class="tag">Policy</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>WireGuard VPN</h3>
+                    <p>Custom WireGuard deployment with enhanced security configurations, providing encrypted tunnels optimized for cybersecurity operations and monitoring.</p>
+                    <div class="feature-tags">
+                        <span class="tag">VPN</span>
+                        <span class="tag">Encryption</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation Section -->
+    <section id="technical" class="technical">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Architecture</h2>
+                <p class="section-subtitle">Built for performance, security, and scalability</p>
+            </div>
+            <div class="technical-content">
+                <div class="technical-details">
+                    <h3>Infrastructure Specifications</h3>
+                    <div class="tech-specs">
+                        <div class="spec-item">
+                            <div class="spec-info">
+                                <span class="spec-label">Platform</span>
+                                <span class="spec-value">AWS VPS (Ubuntu 22.04)</span>
+                            </div>
+                            <div class="spec-icon">☁️</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-info">
+                                <span class="spec-label">SIEM Integration</span>
+                                <span class="spec-value">Security Onion</span>
+                            </div>
+                            <div class="spec-icon">🔍</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-info">
+                                <span class="spec-label">Network Scale</span>
+                                <span class="spec-value">15+ Endpoints</span>
+                            </div>
+                            <div class="spec-icon">🌐</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-info">
+                                <span class="spec-label">Security Model</span>
+                                <span class="spec-value">Zero-Trust</span>
+                            </div>
+                            <div class="spec-icon">🔒</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="architecture-diagram">
+                    <h3>Network Topology</h3>
+                    <svg viewBox="0 0 600 500" class="arch-svg">
+                        <!-- AWS Infrastructure -->
+                        <g class="aws-infra">
+                            <rect x="20" y="20" width="560" height="140" rx="16" fill="var(--primary-color)" opacity="0.1" stroke="var(--primary-color)" stroke-width="2"/>
+                            <text x="40" y="50" class="arch-label">AWS Infrastructure (Ubuntu 22.04)</text>
+                            
+                            <!-- NetBird Management -->
+                            <rect x="50" y="70" width="140" height="70" rx="8" fill="var(--accent-color)" opacity="0.2"/>
+                            <text x="120" y="95" text-anchor="middle" class="node-text">NetBird</text>
+                            <text x="120" y="110" text-anchor="middle" class="small-text">Management API</text>
+                            <text x="120" y="125" text-anchor="middle" class="small-text">Dashboard</text>
+                            
+                            <!-- Signal Server -->
+                            <rect x="230" y="70" width="140" height="70" rx="8" fill="var(--accent-secondary)" opacity="0.2"/>
+                            <text x="300" y="95" text-anchor="middle" class="node-text">Signal Server</text>
+                            <text x="300" y="110" text-anchor="middle" class="small-text">P2P Coordination</text>
+                            <text x="300" y="125" text-anchor="middle" class="small-text">NAT Traversal</text>
+                            
+                            <!-- TURN Server -->
+                            <rect x="410" y="70" width="140" height="70" rx="8" fill="var(--accent-color)" opacity="0.2"/>
+                            <text x="480" y="95" text-anchor="middle" class="node-text">TURN Server</text>
+                            <text x="480" y="110" text-anchor="middle" class="small-text">Relay Service</text>
+                            <text x="480" y="125" text-anchor="middle" class="small-text">Fallback</text>
+                        </g>
+                        
+                        <!-- On-Premises Lab -->
+                        <g class="onprem-lab">
+                            <rect x="20" y="200" width="280" height="200" rx="16" fill="var(--accent-secondary)" opacity="0.1" stroke="var(--accent-secondary)" stroke-width="2"/>
+                            <text x="40" y="230" class="arch-label">On-Premises Cybersecurity Lab</text>
+                            
+                            <!-- Security Onion -->
+                            <rect x="40" y="250" width="120" height="60" rx="8" fill="var(--primary-color)" opacity="0.3"/>
+                            <text x="100" y="275" text-anchor="middle" class="node-text">Security Onion</text>
+                            <text x="100" y="290" text-anchor="middle" class="small-text">SIEM Platform</text>
+                            
+                            <!-- Active Directory -->
+                            <rect x="40" y="330" width="120" height="60" rx="8" fill="var(--accent-color)" opacity="0.3"/>
+                            <text x="100" y="355" text-anchor="middle" class="node-text">Active Directory</text>
+                            <text x="100" y="370" text-anchor="middle" class="small-text">Identity Mgmt</text>
+                            
+                            <!-- Endpoints -->
+                            <circle cx="220" cy="280" r="30" fill="var(--accent-secondary)" opacity="0.3"/>
+                            <text x="220" y="285" text-anchor="middle" class="small-text">Network</text>
+                            <text x="220" y="300" text-anchor="middle" class="small-text">Endpoints</text>
+                        </g>
+                        
+                        <!-- Remote Clients -->
+                        <g class="remote-clients">
+                            <rect x="320" y="200" width="260" height="200" rx="16" fill="var(--primary-color)" opacity="0.1" stroke="var(--primary-color)" stroke-width="2"/>
+                            <text x="340" y="230" class="arch-label">Remote & Cloud Clients</text>
+                            
+                            <!-- Client Types -->
+                            <circle cx="360" cy="260" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="360" y="265" text-anchor="middle" class="tiny-text">Mobile</text>
+                            
+                            <circle cx="420" cy="260" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="420" y="265" text-anchor="middle" class="tiny-text">Laptop</text>
+                            
+                            <circle cx="480" cy="260" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="480" y="265" text-anchor="middle" class="tiny-text">Desktop</text>
+                            
+                            <circle cx="390" cy="320" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="390" y="325" text-anchor="middle" class="tiny-text">IoT</text>
+                            
+                            <circle cx="450" cy="320" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="450" y="325" text-anchor="middle" class="tiny-text">Server</text>
+                            
+                            <circle cx="510" cy="320" r="20" fill="var(--accent-color)" opacity="0.4"/>
+                            <text x="510" y="325" text-anchor="middle" class="tiny-text">Cloud</text>
+                        </g>
+                        
+                        <!-- Secure Connections -->
+                        <path d="M 120 140 Q 150 180 120 200" stroke="var(--accent-color)" stroke-width="4" fill="none" opacity="0.8"/>
+                        <path d="M 300 140 Q 330 180 360 200" stroke="var(--accent-color)" stroke-width="4" fill="none" opacity="0.8"/>
+                        <path d="M 480 140 Q 510 180 540 200" stroke="var(--accent-color)" stroke-width="4" fill="none" opacity="0.8"/>
+                        
+                        <!-- Data flow indicators -->
+                        <circle cx="135" cy="170" r="5" fill="var(--accent-color)" class="pulse"/>
+                        <circle cx="315" cy="170" r="5" fill="var(--accent-color)" class="pulse"/>
+                        <circle cx="495" cy="170" r="5" fill="var(--accent-color)" class="pulse"/>
+                        
+                        <!-- Connection labels -->
+                        <text x="135" y="185" class="arch-connection-label">Secure Tunnel</text>
+                        <text x="315" y="185" class="arch-connection-label">P2P Connection</text>
+                        <text x="495" y="185" class="arch-connection-label">Relay Service</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Validation Section -->
+    <section id="validation" class="validation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Performance Metrics</h2>
+                <p class="section-subtitle">Real-world validation of enterprise-grade infrastructure</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-number">14.7M+</div>
+                    <div class="metric-label">Security Events Weekly</div>
+                    <div class="metric-description">Continuous monitoring and analysis of network traffic and security events</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon">✅</div>
+                    <div class="metric-number">99.998%</div>
+                    <div class="metric-label">Event Delivery Rate</div>
+                    <div class="metric-description">High-reliability log aggregation from distributed endpoints to SIEM</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon">⚡</div>
+                    <div class="metric-number">45ms</div>
+                    <div class="metric-label">Average Latency</div>
+                    <div class="metric-description">Optimized WireGuard tunnels ensuring minimal performance impact</div>
+                </div>
+            </div>
+            
+            <div class="validation-statement">
+                <div class="statement-content">
+                    <h3>Enterprise-Grade at Minimal Cost</h3>
+                    <p>This implementation demonstrates enterprise-grade telemetry and security monitoring at minimal cost, proving that robust cybersecurity infrastructure can be achieved through careful architecture and open-source solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Access Your Network?</h2>
+                <p class="cta-description">
+                    Experience the power of self-hosted zero-trust networking with enterprise-grade security monitoring.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://netbird.allyshipglobal.com/ui/login/loginname" class="btn btn-primary btn-large">
+                        <span class="btn-icon">🔐</span>
+                        Access Dashboard
+                    </a>
+                    <a href="https://netbird.allyshipglobal.com/ui/login/userselection" class="btn btn-secondary btn-large">
+                        <span class="btn-icon">👤</span>
+                        Create Account
+                    </a>
+                </div>
+                <div class="cta-links">
+                    <a href="https://github.com/allyshipgloballtd/netbird-cloud-local-siem" class="cta-link" target="_blank" rel="noopener">
+                        <span class="link-icon">📚</span>
+                        View GitHub Implementation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <div class="brand-icon">🔒</div>
+                        <span class="brand-text">NetBird Lab</span>
+                    </div>
+                    <p class="footer-description">Self-hosted network security implementation by Allyship Global Ltd</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-disclaimer">
+                        This is a personal cybersecurity lab implementation. Not affiliated with NetBird.io.
+                    </p>
+                    <div class="footer-links">
+                        <a href="https://netbird.allyshipglobal.com/ui/login/loginname" class="footer-link">Login</a>
+                        <a href="https://netbird.allyshipglobal.com/ui/login/userselection" class="footer-link">Register</a>
+                        <a href="https://github.com/allyshipgloballtd/netbird-cloud-local-siem" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
