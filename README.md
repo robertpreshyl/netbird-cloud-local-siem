@@ -27,13 +27,13 @@
 
 ---
 
-### 🎥 **Quick Overview Video**
+### 🎥 **See It In Action - Security Onion Dashboard Demo**
 
 <div align="center">
 
 **Watch the SIEM dashboard processing real-time security events**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6jGp3aVFP4w?si=68QfaNggrOfVbNOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Security Onion Dashboard Overview](https://img.youtube.com/vi/6jGp3aVFP4w/maxresdefault.jpg)](https://www.youtube.com/watch?v=6jGp3aVFP4w)
 
 *Security Onion dashboard in action - Real-time log processing and threat detection*
 
