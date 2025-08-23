@@ -16,13 +16,13 @@
 
 > **A privacy-first solution for aggregating over 14,000,000+ logs per week into locally hosted Security Onion/Azure Sentinel with local/cloud EDR capabilities.**
 
-[![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
-
 ---
 
 <div align="center">
 
-[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://www.youtube.com/watch?v=6jGp3aVFP4w)
+**Security Onion Dashboard Overview**
+
+[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-blue?style=for-the-badge&logo=video)](https://www.youtube.com/watch?v=6jGp3aVFP4w)
 
 </div>
 
