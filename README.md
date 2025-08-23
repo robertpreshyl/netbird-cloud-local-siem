@@ -26,9 +26,9 @@
 
 **Security Onion Dashboard Overview (1 min)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6jGp3aVFP4w?si=f9Z3VvGNDUWlp0We" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://www.youtube.com/watch?v=6jGp3aVFP4w)
 
-*Security Onion dashboard in action - Watch the full demo above*
+*Click the button above to watch the Security Onion dashboard in action*
 
 </div>
 
