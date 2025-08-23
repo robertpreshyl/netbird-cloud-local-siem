@@ -25,6 +25,20 @@
 
 [![Quick Demo](https://img.shields.io/badge/🚀%20Quick%20Start-Live%20Demo%20Here-brightgreen?style=for-the-badge&logo=rocket)](https://netbird.allyshipglobal.com)
 
+---
+
+### 🎥 **Quick Overview Video**
+
+<div align="center">
+
+**Security Onion Dashboard Overview (1 min)**
+
+[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Security%20Onion%20Dashboard%20Overview.mp4)
+
+*Click to watch the Security Onion dashboard in action*
+
+</div>
+
 </div>
 
 - **Enterprise Problem**: Fragmented cloud/on-prem logging cripples threat detection & intrusion prevention. Commercial solutions cost $15k+/month.
@@ -111,18 +125,19 @@ graph TB
 
 ### Log Collection Strategy
 #### ✅ Enterprise-Grade Log Ingestion via Elastic Fleet Agents 
-- Deployed Elastic Agents on 15+ endpoints (local VMs, cloud honeypots, RDPs).
+- Deployed Elastic Agents on 15+ endpoints (local VMs, cloud honeypots, RDPs/VPs).
 - Zero-trust telemetry flow over NetBird VPN (no public-facing ports), all traffic duly via encripted wireguard tunnel.
 - Complete log visibility across hybrid environments (on-prem + cloud).
-- Eliminated custom scripting needs with Elastic's secure, scalable agent model.
+- Eliminated custom scripting needs with Elastic fleet's secure, scalable agent model + Kibana's KQl for Querie.
+- Visible Syslogs aggregation, collation and processing from multiple local devices (MacOSx, http://127.0.0.1 machines)
 
 ## 📊 **Measured Performance Data**
 
 ### System Performance (7-Day Average)
-- **Log Processing Rate**: 6.6M+ logs processed across Security Onion and Azure Sentinel
+- **Log Processing Rate**: 14M+ logs processed across Security Onion, Kibana + Azure Sentinel for Single Windows server cross-validations
 - **Network Throughput**: Average 8.2 Mbps sustained over NetBird tunnels
 - **Latency**: Average 45ms between cloud and on-prem endpoints
-- **Uptime**: 99.98% over the 3-day period
+- **Uptime**: 99.98% over the 7-day period
 - **Data Freshness**: 95% of logs ingested within 15 seconds of generation
 
 ### Resource Utilization
@@ -132,9 +147,10 @@ graph TB
 
 
 ### System Performance
-- 3.6M+ logs processed in 72 hours (Security Onion + Azure Sentinel).
+- 3.6M+ logs processed in 48 hours (Security Onion + Azure Sentinel).
 - 0% data loss during tunnel failover tests.
-- 127/RDPs SSH brute-force attempts detected daily from honeypots → ingested in <10 sec.
+- 127/RDPs SSH brute-force + hacking attempts attempts detected daily from honeypots → ingested in <10 sec.
+- Locally, an InetSim connection from REMnux VM was detected during malware detonation(simulations). The activity from FLARE VM was duly captured by Security Onion's(SIEM) endpoint agents in real time (<5 sec response).
 
 ---
 
@@ -182,24 +198,30 @@ This demonstrates why services like RDP should never be exposed directly to the 
 
 #### Security Onion SIEM Dashboards
 - **Main Dashboard**: ![Security Onion Dashboard](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-dashboard.png) - Primary SIEM overview with 4.8M+ events
+- **Dashboard Overview**: ![Dashboard Overview](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/dashboard2_10m.png) - 10-minute dashboard overview
 - **Authentication Events**: ![Authentication Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-authentication.png) - Real-time authentication monitoring
+- **Authentication Extended**: ![Authentication Extended](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/authentication2.png) - Extended authentication monitoring
 - **Event Analysis**: ![Event Analysis](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-events-table.png) - Detailed event investigation interface
+- **Session Events**: ![Session Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Sessionevents1.png) - Session event monitoring
+- **Session Events Extended**: ![Session Events Extended](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Sectionevents2.png) - Extended session event analysis
 - **Threat Hunting**: ![Threat Hunting](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-hunt.png) - Advanced threat hunting capabilities
 - **VMware Deployment**: ![VMware Deployment](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/security-onion-vmware.png) - Security Onion VM setup
 
 #### Kibana Elastic Stack
 - **Windows 4625 Events**: ![Kibana 4625 Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/kibana-discover-4625.png) - Failed Windows logon analysis
+- **Login Failed Events**: ![Login Failed Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/loginfailedevents.png) - Detailed login failure analysis
 - **Network Logon Events**: ![Network Logon Events](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/kibana-discover-network.png) - Network authentication monitoring
+- **Network Events Extended**: ![Network Events Extended](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Network2.png) - Extended network event monitoring
 - **Kibana Overview**: ![Kibana Overview](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/kibana-discover-overview.png) - Elastic stack dashboard
 
 #### Additional Evidence Screenshots
-- **Dashboard View 2**: ![Dashboard View 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/4.50.45%20PM.png) - Alternative dashboard perspective
-- **Hunt Interface 2**: ![Hunt Interface 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/4.51.17%20PM.png) - Additional threat hunting view
-- **Authentication 2**: ![Authentication 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.04.39%20PM.png) - Extended authentication monitoring
-- **Events Table 2**: ![Events Table 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.04.50%20PM.png) - Alternative events view
-- **Kibana 4625 2**: ![Kibana 4625 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.05.20%20PM.png) - Additional failed logon analysis
-- **Network Events 2**: ![Network Events 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.32.40%20PM.png) - Extended network monitoring
-- **Kibana Overview 2**: ![Kibana Overview 2](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.34.50%20PM.png) - Alternative Kibana perspective
+- **Dashboard View 1**: ![Dashboard View 1](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/4.50.45%20PM.png) - Alternative dashboard perspective
+- **Hunt Interface**: ![Hunt Interface](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/4.51.17%20PM.png) - Additional threat hunting view
+- **Authentication View**: ![Authentication View](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.04.39%20PM.png) - Extended authentication monitoring
+- **Events Table View**: ![Events Table View](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.04.50%20PM.png) - Alternative events view
+- **Kibana 4625 View**: ![Kibana 4625 View](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.05.20%20PM.png) - Additional failed logon analysis
+- **Network Events View**: ![Network Events View](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.32.40%20PM.png) - Extended network monitoring
+- **Kibana Overview View**: ![Kibana Overview View](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/5.34.50%20PM.png) - Alternative Kibana perspective
 
 ---
 
