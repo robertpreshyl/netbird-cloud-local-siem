@@ -57,3 +57,4 @@ passwords.txt
 *.sublime-workspace
 # Large media files
 *.mov
+.DS_Store
