@@ -31,11 +31,11 @@
 
 <div align="center">
 
-**Security Onion Dashboard Overview (1 min)**
+**Watch the SIEM dashboard processing real-time security events**
 
-[![Security Onion Dashboard Overview](https://img.shields.io/badge/🎥%20Watch%20Demo%20Video-1%20Minute%20Overview-blue?style=for-the-badge&logo=video)](https://github.com/robertpreshyl/netbird-cloud-local-siem/raw/main/images/evidence/Security%20Onion%20Dashboard%20Overview.mp4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6jGp3aVFP4w?si=68QfaNggrOfVbNOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-*Click to watch the Security Onion dashboard in action*
+*Security Onion dashboard in action - Real-time log processing and threat detection*
 
 </div>
 
