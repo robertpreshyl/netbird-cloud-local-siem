@@ -241,7 +241,6 @@ netbird-cloud-local-siem/
 │   ├── 🏗️ architecture/           # Network diagrams
 │   └── 📸 evidence/               # Screenshots of real data
 ├── 📊 data/                       # Datasets and evidence files
-│   ├── 📈 large-datasets/         # Files >100MB (GitHub Releases)
 │   ├── 📋 sample-data/            # Sample files (<100MB)
 │   └── 📖 README.md               # Data documentation
 ├── 🛠️ scripts/                    # Utility scripts
