@@ -489,8 +489,8 @@ class PerformanceOptimizer {
     preloadCriticalResources() {
         // Preload dashboard and registration pages
         const criticalLinks = [
-            'https://netbird.allyshipglobal.com/ui/login/loginname',
-            'https://netbird.allyshipglobal.com/ui/login/userselection'
+            'https://asl.allyshipglobal.com/ui/login/loginname',
+            'https://asl.allyshipglobal.com/ui/login/userselection'
         ];
 
         criticalLinks.forEach(href => {
@@ -731,7 +731,7 @@ class UserExperience {
         // Add loading states to buttons
         document.querySelectorAll('.btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                if (btn.href && btn.href.includes('netbird.allyshipglobal.com')) {
+                if (btn.href && btn.href.includes('asl.allyshipglobal.com')) {
                     btn.innerHTML = '<span class="loading-spinner"></span> Loading...';
                     btn.style.pointerEvents = 'none';
                 }

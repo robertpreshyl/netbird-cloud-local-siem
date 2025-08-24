@@ -98,7 +98,7 @@ The website includes console-based analytics tracking that can be easily extende
 Our scalable domain architecture allows for future growth:
 - **Main Site**: allyshipglobal.com (this frontend)
 - **Lab Platform**: lab.allyshipglobal.com
-- **ASL VPN**: netbird.allyshipglobal.com
+- **ASL VPN**: asl.allyshipglobal.com
 - **VPN Services**: vpn.allyshipglobal.com
 - **Community Platform**: community.allyshipglobal.com
 
@@ -107,7 +107,7 @@ Our scalable domain architecture allows for future growth:
 1. **Test locally** - Open `index.html` in your browser
 2. **Customize content** - Update GitHub links and metrics
 3. **Deploy** - Upload to your web server
-4. **Configure** - Set up your NetBird dashboard at netbird.allyshipglobal.com/ui
+4. **Configure** - Set up your NetBird dashboard at asl.allyshipglobal.com/ui
 
 ## 📞 Support
 

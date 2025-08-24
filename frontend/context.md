@@ -1,6 +1,6 @@
 # ASL VPN - Allyship Security Lab Front-End Development Prompt
 
-Create a modern, responsive one-page front-end website for ASL VPN (Allyship Security Lab VPN) - a self-hosted NetBird instance at netbird.allyshipglobal.com. This showcases our cybersecurity lab's technical implementation while building our global security community brand.
+Create a modern, responsive one-page front-end website for ASL VPN (Allyship Security Lab VPN) - a self-hosted NetBird instance at asl.allyshipglobal.com. This showcases our cybersecurity lab's technical implementation while building our global security community brand.
 
 ## 🎯 Primary Goals
 
@@ -39,7 +39,7 @@ Create a modern, responsive one-page front-end website for ASL VPN (Allyship Sec
 - Subheading: "Privacy-first networking for our cybersecurity lab environment"
 - 2-3 sentence description of what this NetBird instance accomplishes
 - Call-to-action buttons:
-  - "Access Dashboard" (links to netbird.allyshipglobal.com/ui)
+  - "Access Dashboard" (links to asl.allyshipglobal.com/ui)
   - "View GitHub Implementation" (links to your GitHub repo)
 
 ### Features Section
@@ -66,7 +66,7 @@ Metrics from your implementation:
 ### Call-to-Action Section
 - "Ready to Access Your Network?"
 - Two prominent buttons:
-  - "Access Dashboard" (links to netbird.allyshipglobal.com/ui)
+  - "Access Dashboard" (links to asl.allyshipglobal.com/ui)
   - "Create Account" (links to registration page)
 
 ## 🏗️ Branding Elements
@@ -104,6 +104,6 @@ Metrics from your implementation:
 Our scalable domain architecture allows for future growth:
 - **Main Site**: allyshipglobal.com (this frontend)
 - **Lab Platform**: lab.allyshipglobal.com
-- **ASL VPN**: netbird.allyshipglobal.com
+- **ASL VPN**: asl.allyshipglobal.com
 - **VPN Services**: vpn.allyshipglobal.com
 - **Community Platform**: community.allyshipglobal.com
