@@ -52,7 +52,7 @@ frontend/
 ### Update GitHub Link
 Edit `index.html` and replace:
 ```html
-https://github.com/allyshipgloballtd/netbird-cloud-local-siem
+https://github.com/robertpreshyl/netbird-cloud-local-siem
 ```
 with your actual GitHub repository URL.
 
