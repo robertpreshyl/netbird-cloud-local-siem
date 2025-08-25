@@ -102,16 +102,17 @@ body {
 }
 
 .brand-logo {
-    height: 28px;
+    height: 48px;
     width: auto;
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 10px;
     vertical-align: middle;
+    filter: drop-shadow(0 2px 6px rgba(13, 148, 136, 0.35));
 }
 
 @media (min-width: 768px) {
     .brand-logo {
-        height: 32px;
+        height: 56px;
     }
 }
 
