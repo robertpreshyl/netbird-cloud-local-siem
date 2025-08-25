@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔒 NetBird Cloud-Local SIEM
+# 🔒 Allyship Security Lab VPN - Cloud-Local SIEM
 
 **Enterprise-Grade Security Infrastructure with Zero Vendor Lock-in**
 
@@ -268,7 +268,7 @@ This DIY setup proves enterprise-grade telemetry is achievable at minimal cost f
 
 ## ⚠️ **Trademark Notice**
 
-This project demonstrates a self-hosted implementation of NetBird. NetBird® is a registered trademark of NetBird, Inc. This implementation is operated independently and is not affiliated with, endorsed by, or connected to NetBird, Inc. The use of "netbird" in the subdomain is for descriptive purposes only to indicate the technology being demonstrated.
+This project demonstrates a self-hosted implementation of NetBird by Allyship Security Lab. NetBird® is a registered trademark of NetBird, Inc. This implementation is operated independently and is not affiliated with, endorsed by, or connected to NetBird, Inc. The use of "asl" in the subdomain is for descriptive purposes only to indicate the Allyship Security Lab implementation.
 
 ---
 
@@ -289,11 +289,11 @@ This project demonstrates a self-hosted implementation of NetBird. NetBird® is 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%20Robertpreshyl-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/precious-robert/)
 [![GitHub](https://img.shields.io/badge/GitHub-robertpreshyl-black?style=for-the-badge&logo=github)](https://github.com/robertpreshyl)
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Explore%20Now-green?style=for-the-badge)](https://netbird.allyshipglobal.com)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Explore%20Now-green?style=for-the-badge)](https://asl.allyshipglobal.com)
 
 ---
 
-**Built with ❤️ by [Robert](https://www.linkedin.com/in/precious-robert/)**
+**Built with ❤️ by [Robert](https://www.linkedin.com/in/precious-robert/) for Allyship Security Lab**
 
 *Empowering security teams with open-source solutions*
 
