@@ -239,18 +239,31 @@ data/sample-data/kibana-4625-attacks.csv
 
 ```
 allyship-securitylab-VpNSIEM/
-├── 🖼️ images/
-│   ├── 🏗️ architecture/           # Network diagrams
-│   └── 📸 evidence/               # Screenshots of real data
-├── 📊 data/                       # Datasets and evidence files
-│   ├── 📋 sample-data/            # Sample files (<100MB)
-│   └── 📖 README.md               # Data documentation
-├── 🛠️ scripts/                    # Utility scripts
-│   └── 📦 manage-large-files.sh   # Large file management
 ├── ⚙️ config/                     # Configuration examples
-│   ├── 🎛️ netbird-management.json
-│   └── 🔒 wireguard-config.conf
-└── 📖 README.md                   # This document
+│   ├── netbird-management.json
+│   └── wireguard-config.conf
+├── 📊 data/                       # Datasets and evidence files
+│   ├── sample-data/
+│   └── README.md
+├── 🖥️ frontend/                   # Public website (pure HTML/CSS/JS)
+│   ├── assets/
+│   │   ├── asl-logo-full.png
+│   │   ├── asl-logo-mark.png
+│   │   ├── favicon.png
+│   │   └── favicon.svg
+│   ├── index.html
+│   ├── script.js
+│   ├── styles.css
+│   └── README.md
+├── 🖼️ images/                     # Architecture and evidence
+│   ├── architecture/
+│   ├── branding/
+│   └── evidence/
+├── 🛠️ scripts/
+│   └── manage-large-files.sh
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
