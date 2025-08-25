@@ -5,12 +5,12 @@
 **Enterprise-Grade Security Infrastructure with Zero Vendor Lock-in**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/releases)
-[![GitHub stars](https://img.shields.io/badge/stars-⭐-yellow.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/stargazers)
-[![GitHub forks](https://img.shields.io/badge/forks-🔀-blue.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/network)
-[![GitHub issues](https://img.shields.io/badge/issues-📝-orange.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/issues)
-[![GitHub pull requests](https://img.shields.io/badge/PRs-🔀-green.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/pulls)
-[![Security](https://img.shields.io/badge/security-🔒-red.svg)](https://github.com/robertpreshyl/netbird-cloud-local-siem/security)
+[![GitHub release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/releases)
+[![GitHub stars](https://img.shields.io/badge/stars-⭐-yellow.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/stargazers)
+[![GitHub forks](https://img.shields.io/badge/forks-🔀-blue.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/network)
+[![GitHub issues](https://img.shields.io/badge/issues-📝-orange.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/issues)
+[![GitHub pull requests](https://img.shields.io/badge/PRs-🔀-green.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/pulls)
+[![Security](https://img.shields.io/badge/security-🔒-red.svg)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/security)
 [![NetBird](https://img.shields.io/badge/NetBird-WireGuard-blue.svg)](https://netbird.io)
 [![Security Onion](https://img.shields.io/badge/Security%20Onion-SIEM-orange.svg)](https://securityonion.net)
 
@@ -236,7 +236,7 @@ data/sample-data/kibana-4625-attacks.csv
 ## 📁 **Repository Structure**
 
 ```
-netbird-cloud-local-siem/
+allyship-securitylab-VpNSIEM/
 ├── 🖼️ images/
 │   ├── 🏗️ architecture/           # Network diagrams
 │   └── 📸 evidence/               # Screenshots of real data
@@ -280,8 +280,8 @@ This project demonstrates a self-hosted implementation of NetBird by Allyship Se
 
 **Star this repository** if it helped you understand enterprise-grade security infrastructure!
 
-[![GitHub stars](https://img.shields.io/badge/⭐%20Star%20this%20repo-Let%20others%20find%20it!-yellow?style=for-the-badge)](https://github.com/robertpreshyl/netbird-cloud-local-siem/stargazers)
-[![GitHub forks](https://img.shields.io/badge/🔀%20Fork%20it-Make%20it%20your%20own!-blue?style=for-the-badge)](https://github.com/robertpreshyl/netbird-cloud-local-siem/fork)
+[![GitHub stars](https://img.shields.io/badge/⭐%20Star%20this%20repo-Let%20others%20find%20it!-yellow?style=for-the-badge)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/stargazers)
+[![GitHub forks](https://img.shields.io/badge/🔀%20Fork%20it-Make%20it%20your%20own!-blue?style=for-the-badge)](https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM/fork)
 
 ---
 
