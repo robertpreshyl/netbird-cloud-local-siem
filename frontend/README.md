@@ -52,9 +52,8 @@ frontend/
 ### Update GitHub Link
 Edit `index.html` and replace:
 ```html
-https://github.com/robertpreshyl/netbird-cloud-local-siem
+https://github.com/robertpreshyl/allyship-securitylab-VpNSIEM
 ```
-with your actual GitHub repository URL.
 
 ### Update Metrics
 Edit the metrics in the "Real-World Validation" section:
