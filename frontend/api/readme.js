@@ -5,7 +5,15 @@ export default async function handler(req, res) {
     const gh = await fetch(`https://api.github.com/repos/${repo}/readme`, {
       headers: { Accept: "application/vnd.github.v3.html" }
     });
-    const html = await gh.text();
+    let html = await gh.text();
+    // Optional: make topmost image clickable back to home
+    try {
+      const firstImgMatch = html.match(/<img[^>]*src=\"([^\"]+)\"[^>]*>/i);
+      if (firstImgMatch) {
+        const imgTag = firstImgMatch[0];
+        html = html.replace(imgTag, `<a href=\"/\" aria-label=\"Back to Home\">${imgTag}</a>`);
+      }
+    } catch(_) {}
     res.setHeader("content-type", "text/html; charset=utf-8");
     res.status(200).send(`<!doctype html>
 <html lang=\"en\"><head>
