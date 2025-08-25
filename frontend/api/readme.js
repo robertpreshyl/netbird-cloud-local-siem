@@ -29,17 +29,19 @@ export default async function handler(req, res) {
   (function(){
     const root = document.getElementById('readme-root');
     if (!root) return;
-    // Find mermaid code blocks produced by GitHub HTML renderer
-    const nodes = root.querySelectorAll('pre > code.language-mermaid, pre > code.mermaid');
-    nodes.forEach(code => {
-      const pre = code.parentElement;
-      const div = document.createElement('div');
-      div.className = 'mermaid';
-      // Preserve original diagram text
-      div.textContent = code.textContent;
-      pre.replaceWith(div);
+    // Convert fenced mermaid blocks rendered by GitHub to diagrams
+    const codeBlocks = root.querySelectorAll('pre code');
+    codeBlocks.forEach(code => {
+      const txt = (code.textContent || '').trim();
+      if (/^(graph|flowchart)\s/i.test(txt)) {
+        const pre = code.closest('pre') || code.parentElement;
+        const div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = txt;
+        pre.replaceWith(div);
+      }
     });
-    if (nodes.length && window.mermaid) {
+    if (document.querySelector('.mermaid') && window.mermaid) {
       try {
         window.mermaid.initialize({ startOnLoad: false, theme: 'dark' });
         window.mermaid.run({ querySelector: '.mermaid' });
