@@ -101,6 +101,20 @@ body {
     color: var(--text-primary);
 }
 
+.brand-logo {
+    height: 28px;
+    width: auto;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .brand-logo {
+        height: 32px;
+    }
+}
+
 .brand-icon {
     font-size: 1.75rem;
     background: var(--gradient-primary);
