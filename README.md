@@ -119,7 +119,6 @@ graph TB
 | **System Uptime** | 99.98% | 7-day period | ✅ Stable |
 
 > **Note**: These metrics represent realistic security telemetry from a hybrid environment including cloud honeypots receiving 127+ SSH brute-force attempts daily and Windows/macOS systems logging 100,000+ failed logon attempts.
-
 ---
 
 ## 🔥 **Real-World Attack Data (Production)**
