@@ -28,19 +28,9 @@ export default async function handler(req, res) {
   .wrap pre, .wrap code { background:#0B1220; color:#E5E7EB; }
   img { max-width:100%; height:auto; }
   .mermaid { background:#0B1220; border-radius:8px; padding:12px; }
-  .readme-header { display:flex; align-items:center; gap:.5rem; padding: .75rem 1rem; border-bottom:1px solid #1F2937; background:#0B1220; }
-  .readme-header a { display:flex; align-items:center; color:#F8FAFC; text-decoration:none; }
-  .readme-header img { width:28px; height:28px; border-radius:6px; }
-  .readme-header .brand { font-weight:600; margin-left:.5rem; font-size:14px; color:#E5E7EB; }
 </style>
 </head>
 <body>
-  <header class=\"readme-header\">
-    <a href=\"/\" aria-label=\"ASL Shield VPN Home\">
-      <img src=\"/assets/asl-logo-mark.png\" alt=\"ASL Shield\" />
-      <span class=\"brand\">ASL VPN</span>
-    </a>
-  </header>
   <main class=\"wrap\" id=\"readme-root\">${html}</main>
   <script src=\"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js\"></script>
   <script>
