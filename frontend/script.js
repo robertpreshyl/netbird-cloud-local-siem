@@ -12,6 +12,7 @@
     const start = performance.now();
     const startVal = 0;
     const formatter = new Intl.NumberFormat(undefined, {maximumFractionDigits:decimals});
+    const compactFormatter = new Intl.NumberFormat(undefined, {notation:'compact', maximumFractionDigits:1});
     function tick(now){
       const t = Math.min(1, (now - start)/duration);
       const eased = t<0.5 ? 2*t*t : -1+(4-2*t)*t; // easeInOut
@@ -19,6 +20,10 @@
       if (decimals>0) val = parseFloat(val.toFixed(decimals));
       el.textContent = formatter.format(val) + suffix;
       if (t < 1) requestAnimationFrame(tick);
+      else {
+        const useCompact = target >= 1000000 && el.getAttribute('data-compact') !== 'false';
+        el.textContent = (useCompact ? compactFormatter.format(target) : formatter.format(target)) + suffix;
+      }
     }
     requestAnimationFrame(tick);
   };
