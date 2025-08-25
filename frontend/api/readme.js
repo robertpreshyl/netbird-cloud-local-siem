@@ -19,8 +19,36 @@ export default async function handler(req, res) {
   .wrap a { color:#0D9488; text-decoration:none; } .wrap a:hover { text-decoration:underline; }
   .wrap pre, .wrap code { background:#0B1220; color:#E5E7EB; }
   img { max-width:100%; height:auto; }
+  .mermaid { background:#0B1220; border-radius:8px; padding:12px; }
 </style>
-</head><body><main class=\"wrap\">${html}</main></body></html>`);
+</head>
+<body>
+  <main class=\"wrap\" id=\"readme-root\">${html}</main>
+  <script src=\"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js\"></script>
+  <script>
+  (function(){
+    const root = document.getElementById('readme-root');
+    if (!root) return;
+    // Find mermaid code blocks produced by GitHub HTML renderer
+    const nodes = root.querySelectorAll('pre > code.language-mermaid, pre > code.mermaid');
+    nodes.forEach(code => {
+      const pre = code.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      // Preserve original diagram text
+      div.textContent = code.textContent;
+      pre.replaceWith(div);
+    });
+    if (nodes.length && window.mermaid) {
+      try {
+        window.mermaid.initialize({ startOnLoad: false, theme: 'dark' });
+        window.mermaid.run({ querySelector: '.mermaid' });
+      } catch (e) { /* noop */ }
+    }
+  })();
+  </script>
+</body>
+</html>`);
   } catch (e) {
     res.status(500).json({ error: "Failed to load README" });
   }
