@@ -988,11 +988,11 @@ body {
 .footer-k { font-weight: 600; color: var(--text-primary); }
 
 .footer-disclaimer {
-    color: #f59e0b; /* security amber vs harsh red */
-    font-size: 0.95rem;
-    text-align: right;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0.25rem 0 0;
+    font-weight: 400;
 }
 
 .footer-links {
