@@ -1,7 +1,83 @@
+(function initCounters(){
+  const els = document.querySelectorAll('[data-counter] .metric-number');
+  if (!els.length) return;
+
+  const animate = (el)=>{
+    if (el.dataset.animated === 'true') return;
+    el.dataset.animated = 'true';
+    const target = parseFloat(el.getAttribute('data-target'));
+    const decimals = parseInt(el.getAttribute('data-decimals')||'0',10);
+    const suffix = el.getAttribute('data-suffix')||'';
+    const duration = 1200;
+    const start = performance.now();
+    const startVal = 0;
+    const formatter = new Intl.NumberFormat(undefined, {maximumFractionDigits:decimals});
+    function tick(now){
+      const t = Math.min(1, (now - start)/duration);
+      const eased = t<0.5 ? 2*t*t : -1+(4-2*t)*t; // easeInOut
+      let val = startVal + (target - startVal) * eased;
+      if (decimals>0) val = parseFloat(val.toFixed(decimals));
+      el.textContent = formatter.format(val) + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  };
+  const isInViewport = (el)=>{
+    const r = el.getBoundingClientRect();
+    return r.top < (window.innerHeight * 0.9) && r.bottom > 0;
+  };
+
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting){
+          animate(e.target);
+          obs.unobserve(e.target);
+        }
+      });
+    }, {threshold: 0.35, rootMargin: '0px 0px -10% 0px'});
+    els.forEach(el=>io.observe(el));
+  } else {
+    // Fallback: animate when visible on scroll/resize, and once after load
+    const check = ()=>{
+      els.forEach(el=>{ if (isInViewport(el)) animate(el); });
+    };
+    check();
+    window.addEventListener('scroll', check, {passive:true});
+    window.addEventListener('resize', check);
+    setTimeout(check, 800);
+  }
+})();
+
+// Enhance keyboard navigation for top nav
+(function initNavA11y(){
+  const nav = document.querySelector('.nav-menu');
+  if (!nav) return;
+  const links = Array.from(nav.querySelectorAll('.nav-link'));
+  nav.addEventListener('keydown', (e)=>{
+    const current = document.activeElement;
+    const idx = links.indexOf(current);
+    if (idx === -1) return;
+    if (e.key === 'ArrowRight'){
+      e.preventDefault();
+      links[(idx+1)%links.length].focus();
+    } else if (e.key === 'ArrowLeft'){
+      e.preventDefault();
+      links[(idx-1+links.length)%links.length].focus();
+    }
+  });
+})();
 // Enhanced Theme Management
 class ThemeManager {
     constructor() {
-        this.theme = localStorage.getItem('theme') || 'dark';
+        const stored = localStorage.getItem('theme');
+        if (stored) {
+            this.theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            this.theme = 'dark';
+        } else {
+            this.theme = 'light';
+        }
         this.init();
     }
 
@@ -14,6 +90,8 @@ class ThemeManager {
     setTheme(theme) {
         this.theme = theme;
         document.documentElement.setAttribute('data-theme', theme);
+        // Inform UA for built-in form control theming
+        document.documentElement.style.colorScheme = theme === 'dark' ? 'dark' : 'light';
         localStorage.setItem('theme', theme);
         
         // Update theme toggle button state
