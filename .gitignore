@@ -1,60 +1,14 @@
-# ========================
-# OS: Linux (RHEL/Ubuntu/Debian/Oracle Linux)
-# ========================
-*~
+# Project-specific ignores
+frontend/context.md
+
+# OS / Editor files
+.DS_Store
 *.swp
 *.swo
-*.tmp
-/temp/
-/cache/
-.DS_Store
-Thumbs.db
 
-# ========================
-# Logs (NEVER commit logs)
-# ========================
+# Logs and caches
 *.log
-/var/log/*
-/tmp/*
-/log/
-/lost+found/
 
-# ========================
-# System & Package Managers
-# ========================
-/yum/
-/dnf/
-/apt/
-/zypper/
-/snap/
-/run/
-/proc/
-/sys/
-/dev/
-
-# ========================
-# Security: Never commit secrets
-# ========================
-*.pem
-*.key
-*.crt
-*.jks
-config-private/
-secrets.txt
-.env
-.env.local
-backup/
-*.bak
-*.backup
-passwords.txt
-
-# ========================
-# Editors & IDEs
-# ========================
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-# Large media files
-*.mov
-.DS_Store
+# Build artifacts
+/dist/
+/build/
