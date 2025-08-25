@@ -29,12 +29,11 @@ export default async function handler(req, res) {
   (function(){
     const root = document.getElementById('readme-root');
     if (!root) return;
-    // Convert fenced mermaid blocks rendered by GitHub to diagrams
-    const codeBlocks = root.querySelectorAll('pre code');
-    codeBlocks.forEach(code => {
-      const txt = (code.textContent || '').trim();
+    // Look at all <pre> blocks (GitHub may wrap code differently)
+    const preBlocks = root.querySelectorAll('pre');
+    preBlocks.forEach(pre => {
+      const txt = (pre.textContent || '').trim();
       if (/^(graph|flowchart)\s/i.test(txt)) {
-        const pre = code.closest('pre') || code.parentElement;
         const div = document.createElement('div');
         div.className = 'mermaid';
         div.textContent = txt;
