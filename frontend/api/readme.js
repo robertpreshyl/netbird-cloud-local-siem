@@ -1,5 +1,6 @@
 export default async function handler(req, res) {
   const repo = "robertpreshyl/allyship-securitylab-VpNSIEM";
+  const base = `https://raw.githubusercontent.com/${repo}/main/`;
   try {
     const gh = await fetch(`https://api.github.com/repos/${repo}/readme`, {
       headers: { Accept: "application/vnd.github.v3.html" }
@@ -9,6 +10,7 @@ export default async function handler(req, res) {
     res.status(200).send(`<!doctype html>
 <html lang=\"en\"><head>
 <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
+<base href=\"${base}\">
 <title>README – ${repo}</title>
 <style>
   body { margin:0; background:#0F172A; color:#F8FAFC; font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Inter, sans-serif; }
